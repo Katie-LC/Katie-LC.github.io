@@ -1,14 +1,37 @@
-h1 {
+/* basic html styles! yay! */
+html {
+  font-size: 100%;
+  line-height: 1.5 rem;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  height: 100%;
+}
+/*end basic html styles! woo-hoo!*/
+.hero-heading {
   color: purple;
   font-family: "Courier New", Courier, monospace;
-  font-size: xx-large;
+  font-size: 123px;
+  text-shadow: 2px 2px lightsteelblue;
 }
-p {
+.hero-box {
+}
+.hero-image {
+}
+h2 {
   color: purple;
   font-family: "Courier New", Courier, monospace;
 }
 body {
   background-color: black;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  max-height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 img {
   width: 100%;
