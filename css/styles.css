@@ -40,7 +40,7 @@ img {
 }
 .hero-image-box::after {
   content: "";
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -51,6 +51,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 .hero-text-box {
   grid-row: 1 / -1;
@@ -78,4 +79,26 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+/*Begin Media Queries*/
+@media (min-width: 600px) {
+  .hero-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .hero-text {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 920px) {
+    .hero-heading {
+      font-size: 6rem;
+      line-height: 6rem;
+    }
+  }
+  .hero-text{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
