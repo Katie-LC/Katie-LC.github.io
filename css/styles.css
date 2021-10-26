@@ -80,6 +80,30 @@ body {
 *::after {
   box-sizing: inherit;
 }
+/*Begin Gallery Styles*/
+.gallery {
+  margin: 1 rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:0.5rem;
+  grid-auto-rows: 300px;
+}
+.gallery h1 {
+  font-size: 2rem;
+  line-height: 2 rem;
+}
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-img{
+  height:100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+.gallery-img:hover {
+  transform: scale(1.5) ;}
 /*Begin Media Queries*/
 @media (min-width: 600px) {
   .hero-heading {
