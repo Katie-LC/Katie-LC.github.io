@@ -81,16 +81,17 @@ body {
   box-sizing: inherit;
 }
 /*Begin Gallery Styles*/
+.portfolio-container h1{
+  margin: 1rem auto 0 auto;
+  color: purple;
+  text-align: center;
+}
 .gallery {
   margin: 1 rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap:0.5rem;
   grid-auto-rows: 300px;
-}
-.gallery h1 {
-  font-size: 2rem;
-  line-height: 2 rem;
 }
 .gallery-item {
   height: 100%;
@@ -114,6 +115,9 @@ body {
     font-size: 2rem;
     line-height: 2rem;
   }
+  .portfolio-container h1{
+    font-size: 4rem;
+  }
 }
 @media (min-width: 920px) {
     .hero-heading {
@@ -124,5 +128,8 @@ body {
   .hero-text{
     font-size: 2rem;
     line-height: 2rem;
+  }
+  .portfolio-container h1{
+    font-size: 4rem;
   }
 }
