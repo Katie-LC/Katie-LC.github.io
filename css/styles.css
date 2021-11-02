@@ -179,6 +179,7 @@ grid-gap: 1rem;
   .hero-text{
     font-size: 2rem;
     line-height: 2rem;
+    color: purple;
   }
   .portfolio-container h1{
     font-size: 4rem;
@@ -189,10 +190,12 @@ grid-gap: 1rem;
   .about-text p {
     font-size: 1.5 rem;
     line-height: 1.5 rem;
+    color: purple;
   }
   .about-social i {
     font-size: 3rem;
     padding: 0 2rem 2rem 2rem;
+    color: purple;
   }
 }
 
