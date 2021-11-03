@@ -141,6 +141,24 @@ body {
   padding: 0 1rem 1rem 1rem;
 }
 /*End about section styles */
+
+/*Begin link section styles*/
+.links a {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0px 1px 0px 1px;
+}
+.button {
+  color: white;
+  background-color: purple;
+  width: 50%;
+  float: inline-end;
+  text-align: center;
+  align-self: center;
+  padding: 0px 1px 0px 1px;
+}
+/*End link section styles*/
+
 /*Begin Media Queries*/
 @media (min-width: 600px) {
   .hero-heading {
