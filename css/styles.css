@@ -13,6 +13,71 @@ img {
 }
 
 /*end basic html styles! woo-hoo!*/
+/*Begin nav bar styles*/
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  background-color: purple;
+  z-index: 1000;
+}
+.nav-item,
+.logo {
+  color:white;
+  white-space: nowrap;
+}
+.nav-menu, 
+.logo{
+  color: white;
+  text-transform: uppercase;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0pt;
+  margin: 0pt;
+}
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  text-align: center;
+}
+.logo a,
+.nav-menu a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 0.8 rem;
+}
+.logo a {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.nav-menu a {
+  font-weight: 400;
+  letter-spacing: 0.1 rem;
+  border-bottom: 1px solid black;
+  transition: all ease 0.1s;
+}
+,.nav-menu a:hover {
+  border-bottom: 1px solid white;
+}
+.top-nav {
+  background: none;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-content: top;
+  position: fixed;
+  top: 0;
+  height: 8rem ;
+}
+/*End nav bar styles*/
 .hero-heading {
   color: purple;
   font-family: "Courier New", Courier, monospace;
@@ -45,7 +110,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(24, 8, 63, 0.411);
+  /*background-color: rgba(24, 8, 63, 0.411);*/
 }
 .hero-image {
   width: 100%;
