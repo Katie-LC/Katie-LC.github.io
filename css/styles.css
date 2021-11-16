@@ -5,6 +5,11 @@ html {
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html{ scroll-behavior: initial;}
 }
 img {
   width: 100%;
@@ -77,6 +82,8 @@ img {
   top: 0;
   height: 8rem ;
 }
+@supports (position: sticky) { .top-nav { position: -webkit-sticky; /*For
+  Safari*/ position: sticky } }
 /*End nav bar styles*/
 .hero-heading {
   color: purple;
@@ -84,6 +91,10 @@ img {
   font-size: 100px;
   text-shadow: 2px 2px lightsteelblue;
   background-color: black;
+}
+.section-scroll {
+  scroll-margin-top: 9rem;
+  padding: 0 1rem 4rem 1rem;
 }
 .hero-box {
   display: grid;
@@ -95,6 +106,7 @@ img {
   align-items: start;
   height: 100%;
   width: 100%;
+  margin-top: -8rem;
 }
 .hero-image-box {
   height: 100vh;
@@ -110,7 +122,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  /*background-color: rgba(24, 8, 63, 0.411);*/
+  background-color: rgba(34, 6, 66, 0.445) ;
 }
 .hero-image {
   width: 100%;
@@ -252,7 +264,14 @@ grid-gap: 1rem;
   .about-social a:hover {
     color: royalblue;
   }
+  .nav-bar {
+    line-height: 1.5rem;
+  }
+  .nav-menu {
+    padding: 0 1rem;
+  }
 }
+
 @media (min-width: 920px) {
     .hero-heading {
       font-size: 6rem;
@@ -279,6 +298,14 @@ grid-gap: 1rem;
     font-size: 3rem;
     padding: 0 2rem 2rem 2rem;
     color: purple;
+  }
+  .nav-bar {
+    justify-content: space-between;
+    padding: 2rem 0;
+    line-height: 1rem;
+  }
+  .nav-menu {
+    width: ;
   }
 }
 
